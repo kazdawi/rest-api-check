@@ -6,7 +6,7 @@ const { addContact, listContacts, getOneContact, updateContact, delContact } = r
 const router = express.Router()
 
 // test
-router.get('/api/contact', (req, res) => {
+router.get('/', (req, res) => {
     res.status(200).json('The test route is functionnal')
 })
 

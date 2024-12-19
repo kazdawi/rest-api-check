@@ -10,7 +10,9 @@ app.use(express.json())
 //connect to DB
 const connectDB = require("./config/connectDB");
 connectDB();
-
+app.get('/test', (req, res) => {
+    res.status(200).json('The test route is functionnal')
+})
 
 app.use('/api/contact', require('./routes/contact'))
 
